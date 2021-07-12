@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CDE1ED87-598E-4DD4-AAB7-762FBA7934F1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>eczane.My.MyApplication</StartupObject>
+    <RootNamespace>eczane</RootNamespace>
+    <AssemblyName>eczane</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>eczane.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>eczane.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="microsoft.office.interop.excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\Desktop\microsoft.office.interop.excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AsiTakipFormu.Designer.vb">
+      <DependentUpon>AsiTakipFormu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AsiTakipFormu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cari.Designer.vb">
+      <DependentUpon>cari.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cari.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hastaKayit.Designer.vb">
+      <DependentUpon>hastaKayit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hastaKayit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hastaTakip.Designer.vb">
+      <DependentUpon>hastaTakip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hastaTakip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ilacBilgileriForm.Designer.vb">
+      <DependentUpon>ilacBilgileriForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ilacBilgileriForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.vb">
+      <DependentUpon>Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="personel_islemleri.Designer.vb">
+      <DependentUpon>personel_islemleri.vb</DependentUpon>
+    </Compile>
+    <Compile Include="personel_islemleri.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AsiTakipFormu.resx">
+      <DependentUpon>AsiTakipFormu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cari.resx">
+      <DependentUpon>cari.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hastaKayit.resx">
+      <DependentUpon>hastaKayit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hastaTakip.resx">
+      <DependentUpon>hastaTakip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ilacBilgileriForm.resx">
+      <DependentUpon>ilacBilgileriForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personel_islemleri.resx">
+      <DependentUpon>personel_islemleri.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eczaneisim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eczaneOtomasyonuGiris.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Equipment-Syringe-Full-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sil1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cash-register-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\People-Patient-Female-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SASA1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\People-Patient-Male-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documents-Caduceus-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\People-Doctor-Female-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hastakayitt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Equipment-Syringe-Full-icon1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
